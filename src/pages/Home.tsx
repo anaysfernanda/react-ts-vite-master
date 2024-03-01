@@ -41,7 +41,7 @@ const Home: React.FC = () => {
       <input id="buscaNome" value={nome} onChange={ev => setNome(ev.target.value)} />
       <button onClick={() => BuscarNome()}>Buscar</button>
       <br />
-      {novoElemento && <p>{novoElemento.name}</p>}
+      {novoElemento && <p>{`Pessoa encontrada: ${novoElemento.name}`}</p>}
 
       {pessoas.map(pessoa => (
         <>
